@@ -6,6 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="export\**" />
+    <EmbeddedResource Remove="export\**" />
+    <None Remove="export\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.Runtime" Version="4.3.1" />
   </ItemGroup>
